@@ -1,0 +1,189 @@
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+li,a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-family: 'poppins',sans-serif;
+}
+
+/* button css */
+
+
+.btn {
+    border-radius: 20px;
+    margin-top: 30px;
+    display: inline-block;
+    padding: 0.6rem 3rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border: 3px solid #a7a7a7;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: 'poppins',cursive;;
+   
+   }
+
+   .btn:hover {
+    color: black;
+   }
+   
+   .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d4b112;
+    transform: translateX(-100%);
+    transition: all .6s;
+    z-index: -1;
+    
+   }
+   
+   .btn:hover::before {
+    transform: translateX(0);
+    
+   }
+
+/* button-css end */
+
+/* HERO */
+
+#banner{   
+    background: linear-gradient(rgba(0,0,0,0.6),#816c0c), url(image/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.logo{
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+
+.banner-text h1{
+    font-size: 130px;
+    font-family: 'Kaushan Script',cursive;
+}
+.banner-text h1 span{
+    color: #d4b112;
+}
+
+.banner-text p{
+    color: #a7a7a7;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'poppins',sans-serif;
+}
+
+
+
+#sideNav{
+    
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+nav ul li{
+    margin: 50px 20px;
+    
+}
+nav ul li a{
+    color: #a7a7a7;
+}
+
+#menuBtn{
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuBtn img{
+    width: 20px;
+    margin-top: 15px;
+}
+
+@media(max-width:768px){
+    #banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .banner-text p{
+        margin-bottom: 100px;
+    }
+    .banner-text h1{
+        font-size: 90px;
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+   }
+   .btn{
+    width: 50%;
+   }
+   .tittle-text h1{
+    font-size: 35px;
+   }
+
+   .features{
+    flex-basis: 100%;
+   
+   }
+
+   .features-img{
+    flex-basis: 100%;
+   }
+
+   .features-img{
+    width: 100%;
+   }
+
+
+}
+
+
+/* HERO END */
+

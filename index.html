@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700;900&family=Poppins&display=swap" rel="stylesheet">
+    <title>expLa Dent</title>
+</head>
+<body>
+<!-- hero start -->
+
+    <section id="banner">
+        <img src="image/logo.png" class="logo" alt="">
+        <div class="banner-text">
+            <h1>exp<span>L</span>a De<span>n</span>t</h1>
+            <p>style your smiles style your life</p>
+            <div class="banner-btn">
+                <a class="btn" href="#">Read More</a>
+                <a class="btn" href="#">Find</a>
+            </div>
+        </div>
+
+    </section>
+
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testımonıals</a></li>
+                <li><a href="#">Meet Us</a></li>
+
+
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="image/menu.png" id="menu" alt="">
+    </div>
+
+<!-- hero end -->
+
+
+
+<!-- JS -->
+
+    <script>
+        var menuBtn = document.getElementById('menuBtn')
+        var sideNav = document.getElementById('sideNav')
+        var menu = document.getElementById('menu')
+
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == '-250px'){
+                sideNav.style.right = '0';
+                
+            }
+            else{
+                sideNav.style.right = '-250px';
+               
+
+            }
+        }
+    </script>
+
+<!-- JS END -->
+
+</body>
+</html>
