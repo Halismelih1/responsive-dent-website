@@ -18,6 +18,6 @@
 -JS
 
 
-![dent1](https://user-images.githubusercontent.com/125564176/222756887-19a1cbe6-bd9d-422c-a49a-629d967ebced.PNG)
+## SS
 
-![dent2](https://user-images.githubusercontent.com/125564176/222756935-df150ce1-2bf2-4249-ad43-56ee1921d8b3.PNG)
+![ss](https://user-images.githubusercontent.com/125564176/224197016-382e3cd8-85e6-4666-ad85-d7b350841797.gif)
